@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html style="overflow: hidden">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-material-icons/angular-material-icons.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+
+    <!--Slider-->
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <script src="sliderengine/initslider-1.js"></script>
+
+    <script src="applications.js"></script>
+</head>
+<body ng-app="applications" ng-controller="applicationController">
+<header class="header">
+    <div layout="row">
+        <div flex="5"></div>
+        <div layout="row">
+            <span layout="row" layout-align="start center" class="iconColor iconMargin">
+                <ng-md-icon icon="phone" size="25"></ng-md-icon><a href="#"> 0216600247 </a></span>
+            <span layout="row" layout-align="start center" class="iconColor">
+                <ng-md-icon icon="whatsapp" size="25"></ng-md-icon><a href="#"> 03159265669 </a></span>
+        </div>
+        <div flex></div>
+
+        <div layout="row">
+
+            <span layout="row" layout-align="center center" class="iconColor iconMargin">
+        <ng-md-icon icon="account_box" size="25"></ng-md-icon><a href="#"></a></span>
+
+            <span layout="row" layout-align="center center" class="iconColor iconMargin">
+        <ng-md-icon icon="login" size="25"></ng-md-icon><a href="#"> </a></span>
+            <span layout="row" layout-align="center center" class="iconColor">
+                <ng-md-icon icon="supervisor_account" size="25"></ng-md-icon><a href="#"></a></span>
+        </div>
+        <div flex="5"></div>
+    </div>
+</header>
+<!--chat button-->
+<div class="wrapper" >
+
+
+    <md-button class="md-raised button2" id="rotate" ><ng-md-icon icon="chat" style="fill: white;text-align: center" ></ng-md-icon><b>Chat Now</b></md-button>
+
+</div>
+
+<!--main div-->
+<div style="height: 100%; overflow: auto">
+
+    <div layout="column" layout-align="center center" >
+        <md-subheader layout="row" >
+
+            <div layout="row" layout-align="start center">
+                <div layout="column" layout-margin layout-padding>
+                    <img src="images/finalLogo.jpg" class="subheader" layout="row" layout-align="center center">
+                    <md-button class="button">ALL ITEMS</md-button>
+                </div>
+
+                <a href="#" class="searchicon">
+                    <ng-md-icon icon="search" size="30" class="iconSearch"></ng-md-icon>
+                </a><input layout="row" layout-align="center center" class="input">
+
+                <div flex="5"></div>
+                <input layout="row" layout-align="center center" class="input1"><a href="#" class="searchicon">
+                <ng-md-icon icon="shopping_cart" size="30" class="iconSearch"></ng-md-icon>
+            </a>
+
+            </div>
+
+        </md-subheader>
+
+        <div class="animation" layout="row" layout-align="center center"> <!-- Open Animation -->
+            <!-- Insert to your webpage where you want to display the slider -->
+            <div id="amazingslider-1" style="display:block;position:relative;margin:0">
+                <ul class="amazingslider-slides" style="display:none;">
+
+                    <li><img src="images/Ras-Malai_10320.jpg"/></li>
+                    <li><img src="images/rasmalai.JPG"/></li>
+                    <li><img src="images/Box2.jpg"></li>
+
+
+
+                </ul>
+
+                <div class="amazingslider-engine" style="display:none;"><a href="http://amazingslider.com">JavaScript
+                    Slideshow</a></div>
+            </div>
+        </div>
+        <div class="firstToolbar">
+            <md-button class="md-primary buttonFonts">TOP SWEETS</md-button>
+            <md-button class="md-primary buttonFonts">VIEW ALL</md-button>
+        </div>
+
+        <md-card>
+            <md-card-content>
+                <div layout="column">
+
+                    <div layout="column" layout-gt-sm="row" layout-wrap>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced1($event)" ><img src="images/3.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b>Order Now</b></md-button></div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)"><img src="images/5.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced1($event)"><img src="images/7.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b>Order Now</b></md-button></div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)"><img src="images/8.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
+                    </div>
+
+
+                </div>
+            </md-card-content>
+        </md-card>
+
+        <div class="firstToolbar">
+            <md-button class="md-primary buttonFonts">TOP SWEETS</md-button>
+            <md-button class="md-primary buttonFonts">VIEW ALL</md-button>
+        </div>
+
+        <md-card>
+            <md-card-content>
+                <div layout="column" layout-gt-sm="row" layout-wrap>
+                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced1($event)"><img src="images/9.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b><b>Order Now</b></b></md-button></div>
+                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)"><img src="images/10.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
+                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced1($event)"><img src="images/11.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b>Order Now</b></md-button></div>
+                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)"><img src="images/12.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
+                </div>
+            </md-card-content>
+        </md-card>
+    </div>
+
+    <footer layout="column">
+
+        <div layout="column">
+            <div layout="row">
+                <div flex="25">
+                    <p class="fbook">Follow Us On:</p>
+                    <ng-md-icon icon="facebook" class="fbook"></ng-md-icon>
+                    <ng-md-icon icon="twitter" class="fbook"></ng-md-icon>
+                    <ng-md-icon icon="google" class="fbook"></ng-md-icon>
+                </div>
+                <div layout="column">
+                    <div layout="row">
+                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="500" height="250"
+                                src="https://maps.google.com/maps?hl=en&amp;q=11916 94th Ave, South Richmond Hill,NY 11419&amp;ie=UTF8&amp;t=roadmap&amp;z=10&amp;iwloc=B&amp;output=embed"></iframe>
+                    </div>
+
+                    <div layout="row" layout-align="center center">
+
+                        <h3 class="fbook1">Shan Sweets Inc.</h3>
+
+                    </div>
+                </div>
+
+
+                <div flex layout="column" layout-align="start center">
+                    <p class="fbook">CONTACT</p>
+
+                    <p class="fbook">Shan Sweets Inc.</p>
+
+                    <p class="fbook">11916 94th Ave, South Richmond Hill, </p>
+
+                    <p class="fbook">NY 11419</p>
+
+
+                    <p class="fbook">(718) 850-7800</p>
+
+
+                    <p class="fbook">Delivery Timings : 9am to 9pm</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</div>
+</div>
+</body>
+</html> 
