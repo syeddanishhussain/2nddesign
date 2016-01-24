@@ -61,6 +61,7 @@ a:hover{
 }
 .animation
 {
+    border-top: 2px solid #E7679E;
     margin:0;
     padding:0;
     width:100%;
@@ -195,7 +196,7 @@ footer{
     background-color: #EA6A55!important;
     color: white!important;
     position: absolute;
-    top: 50%;
+    top: 26%;
     right: -43px;
 }
 #rotate{
@@ -209,3 +210,17 @@ footer{
     -webkit-transform:rotate(90deg);
     -o-transform:rotate(90deg); }
 
+
+.listdemoBasicUsage md-divider {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+
+.chatSize{
+    width: auto ;
+    height: 1100px ;
+}
+textarea{
+    width: 200px;
+    height: 100px;
+}
