@@ -2,10 +2,7 @@
  * Created by dell1 on 14/01/2016.
  */
 angular.module("applications", ["ngMaterial", "ngMdIcons"])
-    .config(function($mdIconProvider) {
-        $mdIconProvider
-            .iconSet('communication', 'img/icons/sets/communication-icons.svg', 24);
-    })
+    
 //var Firebase = require("firebase");
 //var myFirebaseRef = new Firebase("https://shaansweets.firebaseio.com/")
 
@@ -78,7 +75,6 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
                 $scope.customFullscreen = (wantsFullScreen === true);
             });
         };
-
     });
 function DialogController($scope, $mdDialog) {
     $scope.hide = function () {
