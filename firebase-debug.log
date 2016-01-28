@@ -1,0 +1,17 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files (x86)\nodejs\node.exe C:\Users\syed\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] Platform:     win32
+[debug] Node Version: v4.2.2
+[debug] Time:         Thu Jan 28 2016 21:58:57 GMT+0500 (Pakistan Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/shansweets2nd/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/shansweets2nd/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'shansweets2nd'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing shansweets2nd directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/shansweets2nd/uploads/-K98A5lE37Z7itLOkAOo?token=XXX&fileCount=648&message= 

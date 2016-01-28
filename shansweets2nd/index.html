@@ -46,26 +46,51 @@
         <div flex="5"></div>
     </div>
 </header>
+<!--subheader-->
+<div style="height: 100%; overflow: auto">
+<md-subheader layout="row" layout-align="start center">
+
+    <div layout="row" layout-align="start center">
+        <div layout="column" layout-margin layout-padding >
+            <img src="images/finalLogo.jpg" class="subheader" layout="row" layout-align="center center">
+            <md-button class="button">ALL ITEMS</md-button>
+        </div>
+        <div flex></div>
+
+        <div layout="row" layout-align="center center" >
+
+        <a href="#" class="searchicon" >
+            <ng-md-icon icon="search" size="30" class="iconSearch"></ng-md-icon>
+        </a><input layout="row" layout-align="center center" class="input" placeholder="search sweet here">
+        </div>
+        <div flex="10"></div>
+
+
+
+    </div>
+
+</md-subheader>
 <!--chat button-->
 <!--<div class="wrapper" >-->
 
 
-    <!--<md-button class="md-raised button2" id="rotate" ng-click="toggleRight()" ng-hide="isOpenRight()"><ng-md-icon icon="chat" style="fill: white;text-align: center"></ng-md-icon><b>Chat Now</b></md-button>-->
+<!--<md-button class="md-raised button2" id="rotate" ng-click="toggleRight()" ng-hide="isOpenRight()"><ng-md-icon icon="chat" style="fill: white;text-align: center"></ng-md-icon><b>Chat Now</b></md-button>-->
 
 <!--</div>-->
 
 
 <section layout="row" flex>
 
-    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+    <md-sidenav class="md-sidenav-right md-whiteframe-z2 sideWidth" md-component-id="right">
 
-            <img src="images/finalLogoforchat.jpg" style="height: auto; width: 300px !important;">
+        <img src="images/Untitled-2.jpg" style="height: 78px; width: 400px !important;">
+
 
         <md-content ng-controller="RightCtrl" layout-padding>
             <div layout="column">
                 <md-input-container class="md-block" flex-gt-sm>
                     <label>Name</label>
-                    <input  type="text" required>
+                    <input type="text" required>
                 </md-input-container>
                 <md-input-container class="md-block" flex-gt-sm>
                     <label>Contact No.</label>
@@ -84,29 +109,10 @@
     </md-sidenav>
 </section>
 <!--main div-->
-<div style="height: 100%; overflow: auto">
 
-    <div layout="column" layout-align="center center" >
-        <md-subheader layout="row" >
 
-            <div layout="row" layout-align="start center">
-                <div layout="column" layout-margin layout-padding>
-                    <img src="images/finalLogo.jpg" class="subheader" layout="row" layout-align="center center">
-                    <md-button class="button">ALL ITEMS</md-button>
-                </div>
+    <div layout="column" layout-align="center center">
 
-                <a href="#" class="searchicon">
-                    <ng-md-icon icon="search" size="30" class="iconSearch"></ng-md-icon>
-                </a><input layout="row" layout-align="center center" class="input">
-
-                <div flex="5"></div>
-                <input layout="row" layout-align="center center" class="input1"><a href="#" class="searchicon">
-                <ng-md-icon icon="shopping_cart" size="30" class="iconSearch"></ng-md-icon>
-            </a>
-
-            </div>
-
-        </md-subheader>
 
         <div class="animation" layout="row" layout-align="center center"> <!-- Open Animation -->
             <!-- Insert to your webpage where you want to display the slider -->
@@ -121,13 +127,43 @@
                     <li><img src="images/AlmondBurfee.jpg"></li>
 
 
-
                 </ul>
 
                 <div class="amazingslider-engine" style="display:none;"><a href="http://amazingslider.com">JavaScript
                     Slideshow</a></div>
             </div>
         </div>
+
+        <!--How it works-->
+        <div  style="margin-top: 3%">
+            <h1>How It Works</h1>
+        </div>
+        <div layout="column" layout-gt-sm="row" layout-align="center center">
+            <div class="widthDiv textAlign">
+                <img src="images/Step1.svg" class="imgHeight">
+
+                <h2>Place Your Order Here</h2>
+
+                <p>Conveniently use your computer or smartphone to place your order online.</p>
+            </div>
+            <div class="widthDiv textAlign">
+                <img src="images/Step2.svg" class="imgHeight">
+
+                <h2 >Delivery Within 2 Hours</h2>
+
+                <p >Our commitment is to deliver your order at your door step within 2 hours.</p>
+            </div>
+            <div class="widthDiv textAlign">
+                <img src="images/Step3.svg" class="imgHeight">
+
+                <h2>Pay Cash at your doorstep</h2>
+
+                <p>Once you are satisfied with the order, our service & quality, pay cash on the spot upon delivery.</p>
+            </div>
+        </div>
+        <!--end how it works-->
+
+
         <div class="firstToolbar">
             <md-button class="md-primary buttonFonts">TOP SWEETS</md-button>
             <md-button class="md-primary buttonFonts">VIEW ALL</md-button>
@@ -136,10 +172,22 @@
         <md-card>
             <md-card-content>
                 <div layout="column" layout-gt-sm="row" layout-wrap>
-                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)"><img src="images/9.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b><b>Order Now</b></b></md-button></div>
-                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced1($event)"><img src="images/10.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
-                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced3($event)"><img src="images/11.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b>Order Now</b></md-button></div>
-                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced4($event)"><img src="images/12.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
+                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)"><img
+                            src="images/9.jpg" class="imageAlign imgSweets mainWidth">
+                        <md-button><b><b>Order Now</b></b></md-button>
+                    </div>
+                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced1($event)"><img
+                            src="images/10.jpg" class="imageAlign imgSweets mainWidth">
+                        <md-button><b>Order Now</b></md-button>
+                    </div>
+                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced3($event)"><img
+                            src="images/11.jpg" class="imageAlign imgSweets mainWidth">
+                        <md-button><b>Order Now</b></md-button>
+                    </div>
+                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced4($event)"><img
+                            src="images/12.jpg" class="imageAlign imgSweets mainWidth">
+                        <md-button><b>Order Now</b></md-button>
+                    </div>
                 </div>
             </md-card-content>
         </md-card>
@@ -153,10 +201,22 @@
                 <div layout="column">
 
                     <div layout="column" layout-gt-sm="row" layout-wrap>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced5($event)" ><img src="images/3.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b>Order Now</b></md-button></div>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)"><img src="images/5.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced1($event)"><img src="images/7.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b>Order Now</b></md-button></div>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced3($event)"><img src="images/8.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced5($event)">
+                            <img src="images/3.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)">
+                            <img src="images/5.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced1($event)">
+                            <img src="images/7.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced3($event)">
+                            <img src="images/8.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
                     </div>
 
 
@@ -172,10 +232,22 @@
         <md-card>
             <md-card-content>
                 <div layout="column" layout-gt-sm="row" layout-wrap>
-                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced4($event)"><img src="images/9.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b><b>Order Now</b></b></md-button></div>
-                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced5($event)"><img src="images/10.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
-                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)"><img src="images/11.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b>Order Now</b></md-button></div>
-                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced1($event)"><img src="images/12.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
+                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced4($event)"><img
+                            src="images/9.jpg" class="imageAlign imgSweets mainWidth">
+                        <md-button><b><b>Order Now</b></b></md-button>
+                    </div>
+                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced5($event)"><img
+                            src="images/10.jpg" class="imageAlign imgSweets mainWidth">
+                        <md-button><b>Order Now</b></md-button>
+                    </div>
+                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)"><img
+                            src="images/11.jpg" class="imageAlign imgSweets mainWidth">
+                        <md-button><b>Order Now</b></md-button>
+                    </div>
+                    <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced1($event)"><img
+                            src="images/12.jpg" class="imageAlign imgSweets mainWidth">
+                        <md-button><b>Order Now</b></md-button>
+                    </div>
                 </div>
             </md-card-content>
         </md-card>
@@ -189,10 +261,22 @@
                 <div layout="column">
 
                     <div layout="column" layout-gt-sm="row" layout-wrap>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced3($event)" ><img src="images/3.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b>Order Now</b></md-button></div>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced4($event)"><img src="images/5.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced5($event)"><img src="images/7.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b>Order Now</b></md-button></div>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)"><img src="images/8.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced3($event)">
+                            <img src="images/3.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced4($event)">
+                            <img src="images/5.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced5($event)">
+                            <img src="images/7.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)">
+                            <img src="images/8.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
                     </div>
 
 
@@ -209,39 +293,66 @@
                 <div layout="column">
 
                     <div layout="column" layout-gt-sm="row" layout-wrap>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced3($event)" ><img src="images/3.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b>Order Now</b></md-button></div>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced4($event)"><img src="images/5.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced5($event)"><img src="images/7.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b>Order Now</b></md-button></div>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)"><img src="images/8.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
-                    </div>
-
-
-                </div>
-            </md-card-content>
-        </md-card><div class="firstToolbar">
-        <md-button class="md-primary buttonFonts">TOP SWEETS</md-button>
-        <md-button class="md-primary buttonFonts">VIEW ALL</md-button>
-    </div>
-
-        <md-card>
-            <md-card-content>
-                <div layout="column">
-
-                    <div layout="column" layout-gt-sm="row" layout-wrap>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced3($event)" ><img src="images/3.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b>Order Now</b></md-button></div>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced4($event)"><img src="images/5.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced5($event)"><img src="images/7.jpg" class="imageAlign imgSweets mainWidth"><md-button   ><b>Order Now</b></md-button></div>
-                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)"><img src="images/8.jpg" class="imageAlign imgSweets mainWidth"><md-button  ><b>Order Now</b></md-button></div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced3($event)">
+                            <img src="images/3.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced4($event)">
+                            <img src="images/5.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced5($event)">
+                            <img src="images/7.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)">
+                            <img src="images/8.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
                     </div>
 
 
                 </div>
             </md-card-content>
         </md-card>
-        <div class="wrapper" >
+        <div class="firstToolbar">
+            <md-button class="md-primary buttonFonts">TOP SWEETS</md-button>
+            <md-button class="md-primary buttonFonts">VIEW ALL</md-button>
+        </div>
+
+        <md-card>
+            <md-card-content>
+                <div layout="column">
+
+                    <div layout="column" layout-gt-sm="row" layout-wrap>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced3($event)">
+                            <img src="images/3.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced4($event)">
+                            <img src="images/5.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced5($event)">
+                            <img src="images/7.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
+                        <div class="imageAlign1 divBorder boxShadows" layout="column" ng-click="showAdvanced($event)">
+                            <img src="images/8.jpg" class="imageAlign imgSweets mainWidth">
+                            <md-button><b>Order Now</b></md-button>
+                        </div>
+                    </div>
 
 
-            <md-button class="md-raised button2" id="rotate" ng-click="toggleRight()" ng-hide="isOpenRight()"><ng-md-icon icon="chat" style="fill: white;text-align: center"></ng-md-icon><b>Chat Now</b></md-button>
+                </div>
+            </md-card-content>
+        </md-card>
+        <div class="wrapper">
+
+
+            <md-button class="md-raised button2" id="rotate" ng-click="toggleRight()" ng-hide="isOpenRight()">
+                <ng-md-icon icon="chat" style="fill: white;text-align: center"></ng-md-icon>
+                <b>Chat Now</b></md-button>
 
         </div>
     </div>

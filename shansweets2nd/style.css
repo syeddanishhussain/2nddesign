@@ -76,7 +76,7 @@ a:hover{
 }
 .input{
     height: 32px;
-    width: 450px;
+    width: 200px;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     border-right: 1px solid black;
@@ -223,4 +223,16 @@ footer{
 textarea{
     width: 200px;
     height: 100px;
+}
+.sideWidth{
+    width: 450px !important;
+}
+.widthDiv{
+    width: 370px;
+}
+.imgHeight{
+    height: 100px;
+}
+.textAlign{
+    text-align: center;
 }
