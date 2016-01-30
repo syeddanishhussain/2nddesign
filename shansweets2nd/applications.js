@@ -15,7 +15,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog1.tmpl.html',
+                templateUrl: 'views/dialog1.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -36,7 +36,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog2.tmpl.html',
+                templateUrl: 'views/dialog2.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -58,7 +58,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog3.tmpl.html',
+                templateUrl: 'views/dialog3.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -80,7 +80,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog4.tmpl.html',
+                templateUrl: 'views/dialog4.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -102,7 +102,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog5.tmpl.html',
+                templateUrl: 'views/dialog5.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -123,7 +123,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog6.tmpl.html',
+                templateUrl: 'views/dialog6.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -145,7 +145,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog7.tmpl.html',
+                templateUrl: 'views/dialog7.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -167,7 +167,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog8.tmpl.html',
+                templateUrl: 'views/dialog8.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -189,7 +189,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog9.tmpl.html',
+                templateUrl: 'views/dialog9.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -211,7 +211,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog10.tmpl.html',
+                templateUrl: 'views/dialog10.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -234,7 +234,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog11.tmpl.html',
+                templateUrl: 'views/dialog11.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -257,7 +257,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog12.tmpl.html',
+                templateUrl: 'views/dialog12.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -280,7 +280,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog13.tmpl.html',
+                templateUrl: 'views/dialog13.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -303,7 +303,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog14.tmpl.html',
+                templateUrl: 'views/dialog14.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -326,7 +326,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog15.tmpl.html',
+                templateUrl: 'views/dialog15.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -350,7 +350,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog1.tmpl.html',
+                templateUrl: 'views/dialog1.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -373,7 +373,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog1.tmpl.html',
+                templateUrl: 'views/dialog1.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -396,7 +396,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog1.tmpl.html',
+                templateUrl: 'views/dialog1.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
@@ -419,7 +419,7 @@ angular.module("applications", ["ngMaterial", "ngMdIcons"])
             var useFullScreen = ($mdMedia('sm') || $mdMedia('xs')) && $scope.customFullscreen;
             $mdDialog.show({
                 controller: DialogController,
-                templateUrl: 'dialog1.tmpl.html',
+                templateUrl: 'views/dialog1.tmpl.html',
                 parent: angular.element(document.body),
                 targetEvent: ev,
                 clickOutsideToClose: true,
