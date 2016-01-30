@@ -185,7 +185,7 @@ footer{
     margin-top: 5%;
     width: 1050px;
     height: 45px;
-    background-color: #428BCA;
+    background-color: #EA6A55;
 }
 
 .wrapper {
@@ -235,4 +235,7 @@ textarea{
 }
 .textAlign{
     text-align: center;
+}
+.boxShadowNone{
+    box-shadow: none !important;
 }
