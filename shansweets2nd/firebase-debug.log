@@ -1,0 +1,29 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\syed\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] Platform:     win32
+[debug] Node Version: v5.5.0
+[debug] Time:         Tue Feb 02 2016 22:22:42 GMT+0500 (Pakistan Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/shansweets2nd/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/shansweets2nd/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'shansweets2nd'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing shansweets2nd directory for upload...
+[debug] Error: UNKNOWN: unknown error, open 'C:\Users\syed\AppData\Local\Temp\firebase-upload-4332nj3rUc0seFvw.tar.gz'
+    at Error (native)
+    at Object.fs.openSync (fs.js:584:18)
+    at Object._createTmpFileSync [as fileSync] (C:\Users\syed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\tmp\lib\tmp.js:244:15)
+    at C:\Users\syed\AppData\Roaming\npm\node_modules\firebase-tools\lib\prepareUpload.js:24:23
+    at lib$rsvp$$internal$$initializePromise (C:\Users\syed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:541:9)
+    at new lib$rsvp$promise$$Promise (C:\Users\syed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:757:9)
+    at module.exports (C:\Users\syed\AppData\Roaming\npm\node_modules\firebase-tools\lib\prepareUpload.js:16:10)
+    at module.exports (C:\Users\syed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:20:10)
+    at _chain (C:\Users\syed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:19:45)
+    at C:\Users\syed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:73:12
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -1,13 +1,27 @@
 /**
  * Created by dell1 on 14/01/2016.
  */
-angular.module("applications", ["ngMaterial", "ngMdIcons"])
+angular.module("applications", ["ngMaterial","ngMdIcons","ngNewRouter","app.home",'app.view'])
 
 //var Firebase = require("firebase");
 //var myFirebaseRef = new Firebase("https://shaansweets.firebaseio.com/")
 
 
-    .controller("applicationController", function ($scope, $mdDialog, $mdMedia, $timeout, $mdSidenav, $log) {
+    .controller("applicationController", function ($scope, $mdDialog, $mdMedia, $timeout, $mdSidenav, $log, $router,$location) {
+        $router.config([
+            {path: "/", component: "home"},
+            {path: "/home", component: "home"},
+            {path: "/view", component: "view"}
+
+        ]);
+        $scope.goToView = function(){
+            $location.path("/view")
+
+        }
+        $scope.goToHome = function(){
+            $location.path("/home")
+
+        }
         $scope.status = '  ';
         $scope.customFullscreen = $mdMedia('xs') || $mdMedia('sm');
 

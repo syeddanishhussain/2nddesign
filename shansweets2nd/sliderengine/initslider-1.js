@@ -37,7 +37,7 @@ jQuery(document).ready(function(){
         skin:"Classic",
         addgooglefonts:false,
         navshowplaypause:true,
-        navshowplayvideo:false,
+        navshowplayvideo:true,
         navshowplaypausestandalonemarginx:8,
         navshowplaypausestandalonemarginy:8,
         navbuttonradius:0,
