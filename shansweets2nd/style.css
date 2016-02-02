@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    overflow: auto;
 
 }
 
@@ -50,7 +50,7 @@ a:hover{
 }
 .subheader{
     width: 230px;
-    height: auto;
+    height: 107px;
     margin-right: 9%;
     margin-left: 3%;
 
@@ -123,8 +123,12 @@ a:hover{
     margin-top: 50px; }
 
 .dialogImg{
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
+}
+.dialogImg1{
+    width: 800px;
+    height: 480px;
 }
 .logoImg{
     width: 40px;
@@ -158,7 +162,7 @@ footer{
 .imageAlign1{
     width: auto;
     height: auto;
-    padding: 0px;
+    padding: 0;
     margin: 5px;
     border: 3px solid #F4F4F4;
 
